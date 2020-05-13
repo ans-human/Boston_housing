@@ -78,7 +78,7 @@ def ModelComplexity(X, y):
     max_depth = np.arange(1,11)
 
     # Calculate the training and testing scores
-    train_scores, test_scores = curves.validation_curve(DecisionTreeRegressor(), X, y, \
+    train_scores, test_scores = validation_curve(DecisionTreeRegressor(), X, y, \
         param_name = "max_depth", param_range = max_depth, cv = cv, scoring = 'r2')
 
     # Find the mean and standard deviation for smoothing
@@ -88,7 +88,7 @@ def ModelComplexity(X, y):
     test_std = np.std(test_scores, axis=1)
 
     # Plot the validation curve
-    pl.figure(figsize=(7, 5))
+    pl.figure(figsize=(9, 7))
     pl.title('Decision Tree Regressor Complexity Performance')
     pl.plot(max_depth, train_mean, 'o-', color = 'r', label = 'Training Score')
     pl.plot(max_depth, test_mean, 'o-', color = 'g', label = 'Validation Score')
