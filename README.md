@@ -1,5 +1,5 @@
-# Machine Learning project
-# Model Evaluation and Validation
+<h1 align="center"> Machine Learning project </h1>
+
 ## Project: Predicting Boston Housing Prices
 
 ### Install
