@@ -10,6 +10,7 @@ This project uses **Python** and the following Python libraries:
 - [Pandas](http://pandas.pydata.org/)
 - [matplotlib](http://matplotlib.org/)
 - [scikit-learn](http://scikit-learn.org/stable/)
+
 The project is compiled in [Jupyter Notebook](http://ipython.org/notebook.html).
 
 
